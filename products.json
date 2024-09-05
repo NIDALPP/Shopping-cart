@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Eco-friendly Bamboo Toothbrush",
+        "price": 199,
+        "currency": "INR",
+        "description": "A sustainable bamboo toothbrush with soft bristles, perfect for daily use. Reduce plastic waste with this eco-friendly alternative.",
+        "image": "https://cdn.shopify.com/s/files/1/0560/4166/8681/products/Charcoal_New_4_87e90225-aa10-47ea-a80c-0ed05ae83ae7_295x.jpg?v=1649761036"
+    },
+    {
+        "id": 2,
+        "name": "Stainless Steel Water Bottle",
+        "price": 499,
+        "currency": "INR",
+        "description": "A durable stainless steel water bottle that keeps beverages cold for 24 hours and hot for 12 hours. Ideal for travel, gym, or office.",
+        "image": "https://www.milton.in/cdn/shop/files/Gripper_Bottle_700ml_Black_1.jpg?v=1701490401&width=900"
+    },
+    {
+        "id": 3,
+        "name": "Organic Cotton T-shirt",
+        "price": 799,
+        "currency": "INR",
+        "description": "Comfortable and breathable organic cotton t-shirt available in various colors. Perfect for casual wear, made from 100% organic cotton.",
+        "image": "https://brownliving.in/cdn/shop/products/mens-organic-cotton-polo-fabclo-1-mens-tshirt-brown-living-862049_300x.jpg?v=1682964591"
+    }
+]

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+}
+body{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(108, 121, 57);
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.cart{
+    display: flex;
+    background-color: #f0f0f0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    width: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.fa-solid{
+   color: black;
+}
+
+.cart p{
+    height: 22px;
+    width:22px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+}
+.container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30%;
+
+}
+#root{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+}
+.sidebar {
+    width: 30%;
+    border-radius: 5px;
+    background-color: #716e6e;
+    margin-left: 20px;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    right: -100%; 
+    transition: right 0.3s ease; 
+}
+
+.sidebar.active {
+    right: 0; 
+}
+.sidebar button{
+    background-color: #c5c1d462;
+    border: solid black .75px;
+    border-radius: 10px;
+}
+.head{
+    background-color: rgb(108, 121, 57);
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid#333;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #root, .sidebar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header {
+        width: 100%;
+    }
+}
+
+/* Ensure the container for products is responsive and uniform */
+#root {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusts the number of columns based on screen size */
+    grid-gap: 20px;
+}
+
+/* Style each product to have a consistent look */
+.product {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product img {
+    width: 100%; /* Ensures image takes full width */
+    height: 100%; /* Set a consistent height for product images */
+    object-fit: cover; /* Ensures images maintain aspect ratio and don't distort */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.product h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.product button {
+    background-color: rgb(108, 121, 57);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: rgb(88, 100, 47);
+}
+
