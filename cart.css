@@ -12,7 +12,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
 
 }
 .header{
@@ -40,7 +41,8 @@ body{
     width: 80px;
     border-radius: 15px;
     cursor: pointer;
-    overflow: hidden;
+    
+    
 
 }
 .fa-solid{
@@ -64,7 +66,7 @@ body{
 #root{
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusts the number of columns based on screen size */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 20px;
 
 }
@@ -82,6 +84,7 @@ body{
 
 .sidebar.active {
     right: 0; 
+    width: 30%;
 
 }
 .sidebar button{
@@ -114,7 +117,7 @@ body{
     padding: 10px 0px;
     border-top: 1px solid#333;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
@@ -130,7 +133,7 @@ body{
     .header {
         width: 100%;
     }
-}
+} */
 
 .product {
     background-color: #f9f9f9;
